@@ -1,7 +1,7 @@
 import {FC} from "react";
 
-const App: FC<{}> = () => {
+const Top: FC<{}> = () => {
     return <h1>食神セタップ</h1>;
 }
 
-export default App;
+export default Top;
