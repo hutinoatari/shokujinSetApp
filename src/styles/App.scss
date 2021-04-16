@@ -1,3 +1,32 @@
+$font-bit: 16px;
+$font-ratio: 1.5;
+$font-s: $font-bit / $font-ratio;
+$font-m: $font-bit;
+$font-l: $font-bit * $font-ratio;
+$font-xl: $font-bit * $font-ratio * $font-ratio;
+
+$space-bit: 0.5rem;
+$space-xs: $font-bit;
+$space-s: $font-bit * 2;
+$space-m: $font-bit * 3;
+$space-l: $font-bit * 5;
+$space-xl: $font-bit * 8;
+
 body {
     background: ivory;
+}
+
+header {
+    background: red;
+    text-align: center;
+    color: yellow;
+    & > nav > a {
+        color: yellow;
+        text-decoration: none;
+    }
+}
+
+footer {
+    background: burlywood;
+    text-align: center;
 }
