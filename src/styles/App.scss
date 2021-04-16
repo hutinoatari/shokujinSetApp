@@ -5,7 +5,7 @@ $font-m: $font-bit;
 $font-l: $font-bit * $font-ratio;
 $font-xl: $font-bit * $font-ratio * $font-ratio;
 
-$space-bit: 0.5rem;
+$space-bit: $font-bit / 2;
 $space-xs: $font-bit;
 $space-s: $font-bit * 2;
 $space-m: $font-bit * 3;
@@ -13,7 +13,7 @@ $space-l: $font-bit * 5;
 $space-xl: $font-bit * 8;
 
 body {
-    background: ivory;
+    background: oldlace;
     overflow: hidden;
 }
 #app {
@@ -24,20 +24,34 @@ body {
 }
 
 header {
-    background: red;
-    text-align: center;
-    color: yellow;
-    & > nav > a {
-        color: yellow;
-        text-decoration: none;
+    & > h1 {
+        font-size: $font-xl;
+        margin-top: $space-s;
+        font-weight: bold;
+    }
+    & > nav {
+        margin: $space-xs;
+        & > a {
+            text-decoration: none;
+        }
     }
 }
 
 main {
     overflow: auto;
+    padding: 0 $space-s;
+    & > h2 {
+        font-size: $font-l;
+        margin: $space-xs 0;
+        &:before {
+            content: "・";
+        }
+    }
 }
 
 footer {
-    background: burlywood;
-    text-align: center;
+    padding: $space-xs;
+    & > p, small {
+        font-size: $font-s;
+    }
 }
