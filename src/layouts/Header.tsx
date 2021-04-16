@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Header: FC<{}> = () => {
     return (
-        <header>
-            <h1>食神セタップ</h1>
+        <header style={{textAlign: "center", backgroundColor: "yellow"}}>
+            <h1 style={{"color": "red"}}>食神セタップ</h1>
             <nav>
                 <Link href="/" replace>
                     <a>TOP</a>
