@@ -47,11 +47,18 @@ main {
             content: "・";
         }
     }
+    p {
+        line-height: 2.2em;
+    }
+    a {
+        color: blue;
+    }
 }
 
 footer {
     padding: $space-xs;
-    & > p, small {
+    & > p,
+    small {
         font-size: $font-s;
     }
 }
