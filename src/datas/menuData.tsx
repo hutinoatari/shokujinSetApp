@@ -164,5 +164,15 @@ const dayMenuDatas: menuDataType[][] = [
     ],
     [],
 ];
+const weekMenuDatas: menuDataType[] = [
+    {
+        name: "9.(週替わり)",
+        orderName: "9番",
+    },
+    {
+        name: "15.(週替わり)",
+        orderName: "15番",
+    },
+];
 
-export { menuDatas, dayMenuDatas };
+export { menuDatas, dayMenuDatas, weekMenuDatas };
