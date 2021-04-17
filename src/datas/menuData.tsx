@@ -38,6 +38,7 @@ const menuDatas: menuDataType[] = [
     },
 ];
 const dayMenuDatas: menuDataType[][] = [
+    [],
     [
         {
             name: "月11.豚肉と玉ねぎの生姜焼き",
@@ -162,7 +163,6 @@ const dayMenuDatas: menuDataType[][] = [
             orderName: "日曜14番",
         },
     ],
-    [],
 ];
 const weekMenuDatas: menuDataType[] = [
     {
