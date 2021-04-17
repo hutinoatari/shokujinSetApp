@@ -11,7 +11,7 @@ const Order: FC<{}> = () => {
     const [order, setOrder] = useState<string>("");
     const [orders, setOrders] = useState<string[]>([]);
     const [tableNum, setTableNum] = useState<string>("");
-    
+
     return (
         <>
             <h2>選択</h2>

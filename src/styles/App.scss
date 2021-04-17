@@ -69,3 +69,10 @@ button {
     border: solid black 1px;
     padding: $space-xs/2;
 }
+
+del {
+    background: rgba($color: red, $alpha: 0.5);
+}
+ins {
+    background: rgba($color: lightgreen, $alpha: 0.5);
+}
