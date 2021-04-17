@@ -6,11 +6,11 @@ $font-l: $font-bit * $font-ratio;
 $font-xl: $font-bit * $font-ratio * $font-ratio;
 
 $space-bit: $font-bit / 2;
-$space-xs: $font-bit;
-$space-s: $font-bit * 2;
-$space-m: $font-bit * 3;
-$space-l: $font-bit * 5;
-$space-xl: $font-bit * 8;
+$space-xs: $space-bit;
+$space-s: $space-bit * 2;
+$space-m: $space-bit * 3;
+$space-l: $space-bit * 5;
+$space-xl: $space-bit * 8;
 
 body {
     background: oldlace;
@@ -42,7 +42,7 @@ main {
     padding: 0 $space-s;
     & > h2 {
         font-size: $font-l;
-        margin: $space-xs 0;
+        margin: $space-s 0;
         &:before {
             content: "・";
         }
@@ -61,4 +61,11 @@ footer {
     small {
         font-size: $font-s;
     }
+}
+
+select,
+input,
+button {
+    border: solid black 1px;
+    padding: $space-xs/2;
 }
